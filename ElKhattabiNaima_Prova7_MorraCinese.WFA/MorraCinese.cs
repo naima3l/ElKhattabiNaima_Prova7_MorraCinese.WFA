@@ -43,7 +43,7 @@ namespace ElKhattabiNaima_Prova7_MorraCinese.WFA
         private void btnConferma_Click(object sender, EventArgs e)
         {
             Random random = new Random();
-            int choice = random.Next(1, 3);
+            int choice = random.Next(1, 4);
             switch (choice)
             {
                 case 1:
@@ -67,7 +67,7 @@ namespace ElKhattabiNaima_Prova7_MorraCinese.WFA
             {
                 txtValue.Text = "parità";
             }
-            else if (user == 1 && pc == 2 || user == 1 && pc == 3 || user == 3 && pc == 1)
+            else if (user == 1 && pc == 2 || user == 1 && pc == 3 || user == 3 && pc == 1 || user == 2 && pc ==3)
             {
                 countUser += 1;
                 textBoxUser.Text = $"{countUser}";
